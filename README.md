@@ -25,3 +25,7 @@ The below will run the default SBCL.
 You can start with the shell as following.
 
 `$ docker run -it --rm wshito/roswell-base sh`
+
+In order to refrain WARNING from SBCL due to the seccomp constraint, download [docker-sbcl-seccomp.json](https://raw.githubusercontent.com/daewok/slime-docker/master/resources/docker-sbcl-seccomp.json) file and add the `--security-opt` option when you invoke `docker run` as follows.
+
+`$ docker run -it --rm --security-opt seccomp=dockers/docker-sbcl-seccomp.json wshito/roswell-base`
