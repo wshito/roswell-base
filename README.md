@@ -7,7 +7,7 @@ Docker Hub: [wshito/roswell-base](https://hub.docker.com/r/wshito/roswell-base/)
 ### Included in This Image:
 
 - Roswell with sbcl-bin
-- glibc
+- glibc, libcurl
 - Alpine Linux
 
 ### Install:
